@@ -43,19 +43,19 @@ Dataset yang ada meliputi `4746` baris dengan `10` fitur dan 1 label (`Rent`)
 3. Fitur **posted_on**, **area_locality**, dan **point_of_contact** dihapus karena dianggap terlalu random
 
 ### 2. Ringkasan Exploratory Data Analysis (EDA)
-![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/cityrent.png)
 1. Kota Mumbai memiliki rerata harga sewa jauh lebih mahal dibandingkan kota lain.  
 2. Kota lainnya memiliki harga kurang lebih setara.  
-![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/rent-city-furnish.png)
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/cityrent.png)
 3. Di Delhi dan Hyderabad, hunian semi-furnish lebih mahal daripada hunian full-furnished.
 4. Di Mumbai harga sewa unfurnished jauh di bawah semi dan full-furnished (hampir setengahnya) sehingga dapat dimasukkan pertimbangan.
-![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/city-rent-boxplot.png)
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/rent-city-furnish.png)
 5. Ada 1 outlier di Bangalore dimana harga sewa mencapai 3.500.000 dengan ukuran 2500.
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/city-rent-boxplot.png)
+6. Atas pertimbangan dan percobaan fitur **floor** dan **totalfloor** dihapus, dan hasilnya terjadi perubahan terhadap korelasi yang ditunjukkan dalam heatmap.
 ![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/heatmap.png)
 ![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/heatmap2.png)
-6. Atas pertimbangan dan percobaan fitur **floor** dan **totalfloor** dihapus, dan hasilnya terjadi perubahan terhadap korelasi yang ditunjukkan dalam heatmap.
-![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/rent-city-tenant.png)
 7. Sewa untuk bujangan, keluarga, atau campur tidak memiliki perbedaan signifikan.
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/rent-city-tenant.png)
 
 ### 3. Preprocessing
 Saya menggunakan [regex101](https://regex101.com/r/Xy6zZs/1) untuk membantu *feature engineering*  
