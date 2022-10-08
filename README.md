@@ -64,6 +64,6 @@ Kemudian dipilih menggunakan **onehot encoding** daripada labelencoder karena da
 ### 4. Benchmarking
 ![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark_mae.png)
 ![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark_mse.png)
-![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark.png)
-Notes : menggunakan 5 model sebagai sample dan cross-validation menggunakan K-Fold (10 folds) 
-Hasil benchmark (tanpa parameter) menunjukkan bahwa gradient boosting memiliki hasil paling baik dari ke-5 model baik dari MAE, MSE, atau R2 score.
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark.png)  
+Notes : menggunakan 5 model sebagai sample dan cross-validation menggunakan K-Fold (10 folds)  
+Hasil benchmark (tanpa parameter) menunjukkan bahwa ***gradient boosting*** memiliki hasil paling baik dari ke-5 model baik dari MAE, MSE, atau R2 score.
