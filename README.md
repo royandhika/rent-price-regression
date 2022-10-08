@@ -59,10 +59,11 @@ Dataset yang ada meliputi `4746` baris dengan `10` fitur dan 1 label (`Rent`)
 
 ### 3. Preprocessing
 Saya menggunakan [regex101](https://regex101.com/r/Xy6zZs/1) untuk membantu *feature engineering*  
-Kemudian dipilih menggunakan onehot encoding daripada labelencoder karena data merupakan data nominal 
+Kemudian dipilih menggunakan **onehot encoding** daripada labelencoder karena data merupakan data nominal 
 
 ### 4. Benchmarking
-
-
-### 5. Learning Curve
-
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark_mae.png)
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark_mse.png)
+![graph](https://raw.githubusercontent.com/royandhika/rent-price-regression/main/assets/benchmark.png)
+Notes : menggunakan 5 model sebagai sample dan cross-validation menggunakan K-Fold (10 folds) 
+Hasil benchmark (tanpa parameter) menunjukkan bahwa gradient boosting memiliki hasil paling baik dari ke-5 model baik dari MAE, MSE, atau R2 score.
